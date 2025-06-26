@@ -95,6 +95,19 @@ NETBOX_OBJECT_TYPES = {
     "scripts": "extras/scripts",
     "tags": "extras/tags",
     "webhooks": "extras/webhooks",
+    
+    # Inventory Plugin (netbox-inventory)
+    "assets": "plugins/inventory/assets",
+    "inventory-item-types": "plugins/inventory/inventory-item-types",
+    "inventory-item-groups": "plugins/inventory/inventory-item-groups",
+    "suppliers": "plugins/inventory/suppliers",
+    "purchases": "plugins/inventory/purchases",
+    "deliveries": "plugins/inventory/deliveries",
+    "audit-flows": "plugins/inventory/audit-flows",
+    "audit-flowpages": "plugins/inventory/audit-flowpages",
+    "audit-flowpage-assignments": "plugins/inventory/audit-flowpage-assignments",
+    "audit-trail-sources": "plugins/inventory/audit-trail-sources",
+    "audit-trails": "plugins/inventory/audit-trails",
 }
 
 mcp = FastMCP("NetBox", log_level="DEBUG")
@@ -190,6 +203,19 @@ def netbox_get_objects(object_type: str, filters: dict):
     - wireless-lans
     - wireless-lan-groups
     - wireless-links
+    
+    Inventory Plugin (netbox-inventory):
+    - assets
+    - inventory-item-types
+    - inventory-item-groups
+    - suppliers
+    - purchases
+    - deliveries
+    - audit-flows
+    - audit-flowpages
+    - audit-flowpage-assignments
+    - audit-trail-sources
+    - audit-trails
     
     See NetBox API documentation for filtering options for each object type.
     """
